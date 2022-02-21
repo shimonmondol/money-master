@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h2 class="text-4xl text-center mt-6 pb-8 p-4 ">Shopping Budget</h2>
+    </header>
+    <section class="half-width text-center bg-gray-400 w-4/4 ps-5 flex">
+        <div class="half-width p-8 w-1/2">
+            <img src="/images/Shopping Budget.png" alt="">
+        </div>
+        <div class="bg-right half-width p-4 w-1/2">
+            <div>
+                <h4 class="pt-8">Income</h4>
+            </div>
+            <div>
+                <h4 class="p-3">Income : <input type="text" id="topNumber" placeholder="" required /></h4>
+            </div>
+            <div class="p-3">
+                <h4>Expenses</h4>
+            </div>
+            <div class="p-2">
+                <h4> Food : <input type="text" id="firstNumber" placeholder="" required /></h4>
+            </div>
+            <div class="p-2">
+                <h4>Rent : <input type="text" id="secondNumber" placeholder="" required /></h4>
+            </div>
+            <div class="p-2">
+                <h4>Cloth : <input type="text" id="thirdNumber" placeholder="" required /></h4>
+            </div>
+            <br />
+            <div>
+                <button onclick="v()"
+                    class="bg-blue-500 mt-2 px-10 rounded py-2 text-white font-medium p-4">Calculate</button>
+                <h4 class="pt-8">Total-Expenses : <p class="pt-5" id="total-expenses" type="text"></p>
+                </h4>
+                <h4 class="pt-1">Balance : <p class="pt-5" id="balance" type="text"></p>
+                </h4>
+
+
+            </div>
+            <div>
+                <h4 class="pt-1 pb-5">Save : <input type="text" id="lastNumber" /> % <button onclick="w ()"
+                        class="bg-blue-500 mb-3 mt-2 px-5 rounded py-1 text-white font-medium p-4">Save</button>
+                </h4>
+                <h4 class="pt-1">Saving-Amount : <p class="pt-5" id="saving" type="text"></p>
+                </h4>
+                <h4 class="pt-3 pb-5">Remaining-Balance : <p class="pt-5" id="remaining-balance" type="text"></p>
+                </h4>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <script src="/Calculate.js"></script>
+</body>
+
+</html>
